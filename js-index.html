@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>JS demo</title>
+	<!-- my CSS  -->
+	<link href="style/myStyles.css" rel="stylesheet" >
+	
+	<!-- javascript -->
+	<script type="text/javascript">
+		//javascript goes here inside script tags
+		//document.write("Hi"); //write direct to webpage
+		document.write("<h1>Hello World!</h1>"); //using HTML tags
+		
+		//this is a var declare and value assigned
+		var name = "Jo";
+		document.write("Hi " + name+ "\n how are you? "); //making use of the variable
+		
+		
+		//First example : I make an addition of 3 variables, and parsing them to become integers
+		
+		var breakfast;
+		var lunch;
+		var dinner;
+		
+		breakfast = parseInt(prompt("How many kcal did you eat for breakfast?"));
+		lunch = parseInt(prompt("How many kcal did you eat for lunch?"));
+		dinner = parseInt(prompt("How many kcal did you eat for dinner?"));
+		
+		var result = breakfast + lunch + dinner;
+		alert("Kcal you have eaten today: " + result);
+		
+		//Second example : I use 2 variable and then I use the IF and else statement.
+		
+		var home
+		var pub
+		
+		home = (prompt("How many night are you stay home during the week?"));
+		pub = (prompt("How night are you going to the pub during the week?"));
+		
+		if((home <= pub) && (pub <= 1)){
+			alert("You are a student model!");
+		}
+		
+		if((home <= pub) && (pub <= 3)){
+			alert("You are a good student!");
+		}
+		
+		else{
+			alert("<br /> Go back and study!!!")
+		}
+		
+		//Third example : inthe second page
+		
+		
+			
+	</script>
+  </head>
+  <body>
+	<p></p>
+	<p>my paragraph</p>
+	<a href="page2.html">Page 2</a>
+	
+	
+  </body>
+</html>
